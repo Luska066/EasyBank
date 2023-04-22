@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:display=swap');
+
+:root{
+    --color-primary-DarkBlue: hsl(233, 26%, 24%);
+    --color-primary-LimeGreen: hsl(136, 65%, 51%);
+    --color-primary-Cyan: hsl(192, 70%, 51%);
+
+    --color-secundary-GrayishBlue: hsl(233, 8%, 62%);
+    --color-secundary-LightGrayishBlue: hsl(220, 16%, 96%);
+    --color-secundary-VeryLightGray: hsl(0, 0%, 98%);
+    --color-secundary-White :hsl(0, 0%, 100%);
+
+    font-size: 18px;
+}
+
+*{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#sc-choose{
+    width: 100%;
+    height: 900px;
+    transform: translate(0px,-180px);
+
+    bottom:0%;
+    border: 1px solid red;
+    z-index: -1;
+
+    background-color: var(--color-secundary-LightGrayishBlue);
+}
