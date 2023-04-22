@@ -21,7 +21,7 @@
 }
 
 #sc-apresentation{
-    border: 1px solid red;
+
     z-index: -1;
     width: 100%;
 
@@ -50,12 +50,23 @@
 
 }
 
+
+.show{
+    opacity: 1;
+    transition: all .6s linear;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all .3s linear;
+}
+
 .container-text{
     width: 500px;
     padding: 10px;
     display: flex;
     flex-direction: column;  
-    margin-left: 250px;
+
     position: relative;
     transform: translate(0px,-60px);
 }
@@ -76,7 +87,37 @@
 }
 
 .container-text>.space{
+    animation-name: spaceAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
     margin-top: 20px;
+}
+
+.bt-requestInvite.space{
+    animation-name: spaceAnimationTwo;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    margin-top: 40px;
+}
+
+@keyframes spaceAnimation{
+    0%{
+        margin-top: 0px;
+    }
+
+    100%{
+        margin-top: 20px;
+    }
+}
+
+@keyframes spaceAnimationTwo{
+    0%{
+        margin-top: 0px;
+    }
+
+    100%{
+        margin-top: 40px;
+    }
 }
 
 #img-apresentation{    

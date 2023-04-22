@@ -92,18 +92,6 @@ body{
 }
 
 
-.bt-requestInvite{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    color:var(--color-secundary-VeryLightGray);
-    transition: all .6s;
-}
-
-.bt-requestInvite:hover{
-    opacity: .8;
-    transform: scale(1.02,1.02);
-}
 
 @keyframes identifier {
     to{
