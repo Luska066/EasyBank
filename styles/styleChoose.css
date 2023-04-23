@@ -13,9 +13,6 @@
     font-size: 18px;
 }
 
-body{
-    height:2500px;
-}
 
 *{
     overflow-x: hidden;
@@ -26,8 +23,8 @@ body{
 
 
 #sc-choose{
+
     width: 100%;
-    height: 800px;
     transform: translate(0px,-140px);
     z-index: -1;
     background-color: var(--color-secundary-LightGrayishBlue);
@@ -89,14 +86,11 @@ body{
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 130px;
+
     flex-wrap: nowrap;
     list-style: none;
-
-
-
-
-
 }
 
 .show{
@@ -127,19 +121,22 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: center;
-
+    margin-top: 20px;
 }
 
 .item-choose{
-    border-radius: 40px;
+    width: 320px;
+    border-radius: 10px;
     height: 350px;
     padding: 20px;
+
     row-gap: 20px;
+    font-size: 12px;
     transition: all .1s;
 }
 
 .item-choose:hover{
-
+    
     transform: scale(1.05,1.05);
     box-shadow: 0px 0px 8px lightgray;
     background-color: var(--color-secundary-White);
@@ -156,6 +153,8 @@ body{
     width: 80px;
 
 }
+
+
 
 @keyframes animationIcon{
     0%{}
@@ -176,9 +175,9 @@ body{
   overflow: hidden;
   color: var(--color-secundary-GrayishBlue);
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 15px;
 
-  width: 290px;
+
 }
 
 

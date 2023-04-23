@@ -8,11 +8,16 @@ window.addEventListener('scroll', (event)=>{
     containers.forEach(e => {
         let height =  e.getBoundingClientRect().bottom;
         console.log(height)
-        if(height < 1174.5){
+        if(height <= 1174.5){
             containertwos.classList.remove('hidden')
             containertwos.classList.add('show')
            
-        }else if (height > 1174.5){
+        }else if (height > 1174.5 ){
+            containertwos.classList.remove('show')
+            containertwos.classList.add('hidden')
+        }
+
+        if(height < 404.5){
             containertwos.classList.remove('show')
             containertwos.classList.add('hidden')
         }
