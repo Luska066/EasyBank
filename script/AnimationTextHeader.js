@@ -9,7 +9,6 @@ window.addEventListener('scroll', (event)=>{
         let height =  e.getBoundingClientRect().bottom;
 
         let width = window.innerWidth;
-
         if(height > 569){
             containertwo.classList.remove('hidden')
             containertwo.classList.add('show')

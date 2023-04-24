@@ -1,0 +1,146 @@
+:root{
+    --color-primary-DarkBlue: hsl(233, 26%, 24%);
+    --color-primary-LimeGreen: hsl(136, 65%, 51%);
+    --color-primary-Cyan: hsl(192, 70%, 51%);
+
+    --color-secundary-GrayishBlue: hsl(233, 8%, 62%);
+    --color-secundary-LightGrayishBlue: hsl(220, 16%, 96%);
+    --color-secundary-VeryLightGray: hsl(0, 0%, 98%);
+    --color-secundary-White :hsl(0, 0%, 100%);
+
+    font-size: 18px;
+}
+
+*{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#sc-footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-primary-DarkBlue);
+    padding: 40px;
+    
+}
+
+#containers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 80%;
+}
+
+#left-part-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 100px;
+
+}
+
+#left-part{
+    display: flex;
+    padding: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 40px;
+
+}
+
+#left-part>img{
+   width: 230px;
+
+}
+
+#logos-footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 10px;
+}
+
+#logos-footer>img{
+    width: 25px;
+
+
+}
+
+.lists{
+
+}
+
+.lists>li{
+    padding: 10px;
+}
+
+.lists>li:hover{
+    color:var(--color-primary-LimeGreen)
+}
+
+#right-part{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+    column-gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-part-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    padding: 40px;
+
+}
+
+#right-part-footer>p{
+    padding-top: 20px;
+}
+
+@media (max-width:1288px){
+    #containers{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+
+    #left-part-footer{
+
+    }
+
+    #right-part-footer{
+
+        padding-bottom: 10px;
+    }
+    }
+
+@media (max-width:775px){
+    
+.lists{
+    width: 100%;
+}
+
+
+.lists>li{
+    text-align: center;
+    padding: 10px;
+
+}
+}
