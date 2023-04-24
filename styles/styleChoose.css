@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:display=swap');
 
 :root{
     --color-primary-DarkBlue: hsl(233, 26%, 24%);
@@ -104,18 +103,6 @@
 }
 
 
-@keyframes animationChoose {
-    0%{
-    width: 0%;
-    }
-  
-    100%{
-
-    width: 100%;
-    }
-}
-
-
 #container-items-choose>li{
     display: flex;
     flex-direction: column;
@@ -125,9 +112,11 @@
 }
 
 .item-choose{
+
     width: 320px;
+
     border-radius: 10px;
-    height: 350px;
+
     padding: 20px;
 
     row-gap: 20px;
@@ -143,15 +132,19 @@
 }
 
 .item-choose>img{
+
+    padding-top: 0px;
+    padding-bottom: 8px;
+    width: 80px;
+
+}
+
+.item-choose>.imgs{
     animation-name: animationIcon;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease;
-    padding-top: 0px;
-    padding-bottom: 8px;
-    width: 80px;
-
 }
 
 
@@ -166,6 +159,7 @@
 .item-choose>h3{
     overflow: hidden;
     width: 100%;
+
     font-weight:600;
     font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
@@ -173,6 +167,7 @@
 }
 .item-choose>p{
   overflow: hidden;
+
   color: var(--color-secundary-GrayishBlue);
   font-weight: 400;
   font-size: 15px;
@@ -199,6 +194,82 @@
     .item-choose{
         width: 300px;
         height: 350px;
+    }
+}
+
+@media (max-width:1180px) {
+
+    
+    #sc-choose{
+
+        width: 100%;
+        transform: translate(0px,0px);
+        z-index: -1;
+        background-color: var(--color-secundary-LightGrayishBlue);
+    }
+
+    #containerAll{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #container-items-choose{
+
+        align-items: left;
+    }
+
+    .item-choose{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-choose>.imgs{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .item-choose>img{
+        
+        text-align: center;
+
+    }
+
+    .item-choose>h3{
+        text-align: center;
+    }
+
+    .item-choose>p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    #art-choose-text{
+        border: 1px solid red;
+        
+        padding: 10px;
+    }
+
+    #sc-choose{
+        padding: 0px;
+    }
+}
+
+@media (max-width:340px) {
+
+ 
+    .item-choose>h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .item-choose{
+        height: 380px;
     }
 }
 
