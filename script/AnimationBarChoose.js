@@ -146,6 +146,22 @@ window.addEventListener('scroll', (event)=>{
             }
         }
 
+        if(width <= 500){
+            if(height < 2247){
+                containertwos.classList.remove('hidden')
+                containertwos.classList.add('show')
+               
+            }else if (height >= 2247){
+                containertwos.classList.remove('show')
+                containertwos.classList.add('hidden')
+            }  
+
+            if(height < 320){
+                containertwos.classList.remove('show')
+                containertwos.classList.add('hidden')
+            }
+        }
+
         if(width == 414 ){
 
             if(height < 2176){
@@ -206,6 +222,24 @@ window.addEventListener('scroll', (event)=>{
                 containertwos.classList.add('show')
                
             }else if (height >= 1943 ){
+                containertwos.classList.remove('show')
+                containertwos.classList.add('hidden')
+            } 
+            
+            if(height < 300){
+                containertwos.classList.remove('show')
+                containertwos.classList.add('hidden')
+            }
+            
+
+        }
+
+        if(width <= 350){
+            if(height <= 2202){
+                containertwos.classList.remove('hidden')
+                containertwos.classList.add('show')
+               
+            }else if (height >= 2202 ){
                 containertwos.classList.remove('show')
                 containertwos.classList.add('hidden')
             } 

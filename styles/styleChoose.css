@@ -22,7 +22,7 @@
 
 
 #sc-choose{
-
+    
     width: 100%;
     transform: translate(0px,-140px);
     z-index: -1;
@@ -124,12 +124,7 @@
     transition: all .1s;
 }
 
-.item-choose:hover{
-    
-    transform: scale(1.05,1.05);
-    box-shadow: 0px 0px 8px lightgray;
-    background-color: var(--color-secundary-White);
-}
+
 
 .item-choose>img{
 
@@ -170,7 +165,7 @@
 
   color: var(--color-secundary-GrayishBlue);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 20px;
 
 
 }
@@ -251,7 +246,7 @@
 
 @media (max-width:450px) {
     #art-choose-text{
-        border: 1px solid red;
+
         
         padding: 10px;
     }
