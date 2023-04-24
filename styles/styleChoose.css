@@ -45,7 +45,7 @@
     row-gap: 10px;
     padding: 40px;
     padding-left:100px ;
-    padding-top: 0;
+    padding-top: 40px;
     padding-bottom: 0;
 
 
@@ -204,6 +204,7 @@
     }
 
     #containerAll{
+        padding-top: 40px;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -241,6 +242,12 @@
     .item-choose>p{
         width: 100%;
         text-align: center;
+    }
+}
+
+@media (max-width:550px) {
+    #containerAll{
+        padding-top: 80px;
     }
 }
 
